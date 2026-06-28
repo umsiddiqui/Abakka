@@ -90,7 +90,7 @@ export default function HowItWorksPage() {
               <div className="w-2 h-2 bg-[#EB1600]" />
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">The process</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6">
               You always know what happens next.
             </h1>
             <p className="text-lg text-[#6B7B82] leading-relaxed">
@@ -124,14 +124,14 @@ export default function HowItWorksPage() {
 
                   {/* Content column */}
                   <div className="p-6 md:p-7 flex-1">
-                    <h3 className={`text-xl lg:text-2xl font-bold mb-2 ${dark ? "text-white" : "text-[#1B3139]"}`}>
+                    <h3 className={`text-xl font-bold mb-2 ${dark ? "text-white" : "text-[#1B3139]"}`}>
                       {s.title}
                     </h3>
                     <p className={`text-sm leading-relaxed mb-4 max-w-2xl ${dark ? "text-[#9BB0B8]" : "text-[#6B7B82]"}`}>
                       {s.desc}
                     </p>
                     <div className={`mt-4 flex items-baseline gap-3 px-4 py-3 border-l-2 ${dark ? "bg-[#EB1600]/[0.07] border-[#EB1600]/60" : "bg-[#FFF8F7] border-[#EB1600]/50"}`}>
-                      <span className={`text-[11px] font-semibold uppercase tracking-widest shrink-0 ${dark ? "text-[#EB1600]" : "text-[#EB1600]"}`}>
+                      <span className="text-xs font-semibold uppercase tracking-widest shrink-0 text-[#EB1600]">
                         Outcome
                       </span>
                       <span className={`text-sm italic leading-snug ${dark ? "text-white" : "text-[#1B3139]"}`}>
@@ -150,31 +150,31 @@ export default function HowItWorksPage() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-1">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">How we align</p>
-              <h2 className="text-2xl font-bold text-[#1B3139] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight">
                 Value first, then terms.
               </h2>
             </div>
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6">
-                <h3 className="text-sm font-bold text-[#1B3139] mb-2">Fixed scope protects everyone</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-2">Fixed scope protects everyone</h3>
                 <p className="text-sm text-[#6B7B82] leading-relaxed">
                   Every SOW includes explicit scope, acceptance criteria, and prerequisites. If something new emerges, we handle it through a written change order — no surprises.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-sm font-bold text-[#1B3139] mb-2">Milestones tied to outcomes</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-2">Milestones tied to outcomes</h3>
                 <p className="text-sm text-[#6B7B82] leading-relaxed">
                   Payments are linked to delivery milestones, not calendar dates. You see working output before each step, so progress and value are visible throughout.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-sm font-bold text-[#1B3139] mb-2">Flexible for larger programs</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-2">Flexible for larger programs</h3>
                 <p className="text-sm text-[#6B7B82] leading-relaxed">
                   Bespoke engagements can be phased with monthly checkpoints. This keeps governance simple and lets us adapt as the program evolves.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-sm font-bold text-[#1B3139] mb-2">You own the IP</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-2">You own the IP</h3>
                 <p className="text-sm text-[#6B7B82] leading-relaxed">
                   All code, infrastructure definitions, documentation, and runbooks are transferred to you at handover. We do not build dependency.
                 </p>
@@ -187,7 +187,7 @@ export default function HowItWorksPage() {
         <section className="bg-[#1B3139] py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-3">Ready to get started?</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3">Ready to get started?</h2>
               <p className="text-sm text-[#9BB0B8] max-w-lg">
                 The free Readiness Check is the lowest-risk way to begin. Two days, a scored report, a clear roadmap — no commitment required.
               </p>

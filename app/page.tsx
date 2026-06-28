@@ -112,7 +112,7 @@ export default function Home() {
                   Senior Data Engineering · Productized
                 </span>
               </div>
-              <h1 className="text-5xl lg:text-[72px] font-bold text-[#1B3139] leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight tracking-tight mb-6">
                 Your data platform should work.{" "}
                 <span className="text-[#EB1600]">We make sure it does.</span>
               </h1>
@@ -169,7 +169,7 @@ export default function Home() {
         <section className="bg-white py-24 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-2xl mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#1B3139] leading-tight mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight mb-6">
                 Teams buy a data platform. Then stall.
               </h2>
               <p className="text-base text-[#6B7B82] leading-relaxed">
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="max-w-xl mb-14">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">How to work with us</p>
-              <h2 className="text-4xl font-bold text-[#1B3139] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight">
                 Three ways to engage.<br />You pick the one that fits.
               </h2>
             </div>
@@ -236,10 +236,10 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-6">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">The offering</p>
-                <h2 className="text-4xl font-bold text-[#1B3139] leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight">
                   Two bundles.<br />Every use case.
                 </h2>
-                <p className="text-sm text-[#6B7B82] mt-3 max-w-md">
+                <p className="text-base text-[#6B7B82] mt-3 max-w-md">
                   Databricks · Cloudera CDP. Start free, then pick the bundle that matches your security posture.
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="max-w-xl mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">The process</p>
-              <h2 className="text-4xl font-bold text-white leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
                 You always know what happens next.
               </h2>
             </div>
@@ -315,8 +315,8 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#EB1600] flex items-center justify-center text-white font-mono text-xs font-bold mb-4">
                     {s.n}
                   </div>
-                  <h4 className="text-sm font-bold text-white mb-2">{s.title}</h4>
-                  <p className="text-xs text-[#9BB0B8] leading-relaxed">{s.desc}</p>
+                  <h4 className="text-base font-bold text-white mb-2">{s.title}</h4>
+                  <p className="text-sm text-[#9BB0B8] leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -336,7 +336,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="max-w-xl mb-14">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">Why Abakka</p>
-              <h2 className="text-4xl font-bold text-[#1B3139] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight">
                 Senior engineers.<br />Fixed price.<br />Real outcomes.
               </h2>
             </div>
@@ -361,7 +361,7 @@ export default function Home() {
               ].map((item) => (
                 <div key={item.title} className="bg-white p-8">
                   <div className="w-4 h-0.5 bg-[#EB1600] mb-5" />
-                  <h3 className="text-base font-bold text-[#1B3139] mb-3">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-[#1B3139] mb-3">{item.title}</h3>
                   <p className="text-sm text-[#6B7B82] leading-relaxed">{item.desc}</p>
                 </div>
               ))}

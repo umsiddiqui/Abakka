@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div className="w-2 h-2 bg-[#EB1600]" />
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">Contact</span>
             </div>
-            <h1 className="text-5xl font-bold text-[#1B3139] leading-tight mb-4">Let&apos;s talk.</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-4">Let&apos;s talk.</h1>
             <p className="text-lg text-[#6B7B82] max-w-xl">
               Tell us what you need. We&apos;ll confirm fit within 24–48 hours and suggest the right next step.
             </p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <div className="w-12 h-12 bg-[#EB1600] flex items-center justify-center text-white font-mono text-xl mx-auto mb-6">
                     ✓
                   </div>
-                  <h2 className="text-2xl font-bold text-[#1B3139] mb-3">We&apos;ve got it.</h2>
+                  <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mb-3">We&apos;ve got it.</h2>
                   <p className="text-sm text-[#6B7B82]">
                     Expect a reply within 24–48 hours. If you selected the Readiness Check, we&apos;ll reach out to schedule a
                     60-minute call to get started.
@@ -161,7 +161,7 @@ export default function ContactPage() {
             {/* Sidebar */}
             <div className="flex flex-col gap-8">
               <div>
-                <h3 className="text-sm font-bold text-[#1B3139] mb-3">What happens next</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-3">What happens next</h3>
                 <ol className="space-y-3">
                   {[
                     "We review your enquiry within 24–48 hours",
@@ -178,7 +178,7 @@ export default function ContactPage() {
               </div>
               <div className="bg-white p-6">
                 <div className="w-4 h-0.5 bg-[#EB1600] mb-4" />
-                <h3 className="text-sm font-bold text-[#1B3139] mb-2">Start with the Readiness Check</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-2">Start with the Readiness Check</h3>
                 <p className="text-xs text-[#6B7B82] leading-relaxed mb-4">
                   Not sure what you need? The free Readiness Check is the no-risk entry point. 2–3 days, scored findings,
                   1-page roadmap. No commitment required.
@@ -186,7 +186,7 @@ export default function ContactPage() {
                 <p className="text-xs font-semibold text-[#1B3139]">Free → $1.5k · 2–3 days</p>
               </div>
               <div>
-                <h3 className="text-sm font-bold text-[#1B3139] mb-3">Markets we serve</h3>
+                <h3 className="text-base font-bold text-[#1B3139] mb-3">Markets we serve</h3>
                 <div className="flex flex-wrap gap-2">
                   {["UK", "EU", "Germany", "US", "Canada", "Australia", "Singapore"].map((m) => (
                     <span key={m} className="text-xs font-mono px-2.5 py-1 border border-[#E8EAEB] text-[#6B7B82] bg-white">

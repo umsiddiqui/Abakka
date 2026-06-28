@@ -129,7 +129,7 @@ export default function AboutPage() {
               <div className="w-2 h-2 bg-[#EB1600]" />
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">About</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6 max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6 max-w-3xl">
               Senior engineers, packaged for delivery.
             </h1>
             <p className="text-lg text-[#6B7B82] leading-relaxed max-w-2xl">
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 <AnimateIn key={cat.name} delay={i * 100} className="bg-[#1B3139]">
                   <div className="p-6 h-full flex flex-col">
                     <div className="w-4 h-0.5 mb-4" style={{ background: cat.accent }} />
-                    <h3 className="text-sm font-bold text-white mb-4">{cat.name}</h3>
+                    <h3 className="text-xl font-bold text-white mb-4">{cat.name}</h3>
                     <ul className="space-y-2.5 flex-1">
                       {cat.skills.map((s) => (
                         <li key={s} className="text-xs font-mono text-[#9BB0B8] flex items-center gap-2 leading-relaxed">
@@ -224,7 +224,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">Delivery model</p>
-                <h2 className="text-3xl font-bold text-[#1B3139] mb-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mb-6">
                   Remote-first, async-friendly.
                 </h2>
                 <p className="text-sm text-[#6B7B82] leading-relaxed">
@@ -254,8 +254,8 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">Platforms</p>
-              <h2 className="text-3xl font-bold text-[#1B3139]">Deep on the platforms that matter.</h2>
-              <p className="text-sm text-[#6B7B82] mt-3 max-w-lg">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139]">Deep on the platforms that matter.</h2>
+              <p className="text-base text-[#6B7B82] mt-3 max-w-lg">
                 We focus on Databricks and Cloudera CDP because that is where our deepest enterprise experience lies.
               </p>
             </div>
@@ -263,8 +263,8 @@ export default function AboutPage() {
               {platforms.map((p) => (
                 <div key={p.name} className="bg-white p-6">
                   <div className="w-4 h-0.5 bg-[#EB1600] mb-4" />
-                  <h3 className="text-base font-bold text-[#1B3139] mb-2">{p.name}</h3>
-                  <p className="text-xs text-[#6B7B82] leading-relaxed">{p.desc}</p>
+                  <h3 className="text-xl font-bold text-[#1B3139] mb-2">{p.name}</h3>
+                  <p className="text-sm text-[#6B7B82] leading-relaxed">{p.desc}</p>
                 </div>
               ))}
             </div>
@@ -288,7 +288,7 @@ export default function AboutPage() {
         <section className="bg-[#EB1600] py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-3">Want to work with us?</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3">Want to work with us?</h2>
               <p className="text-sm text-red-100 max-w-md">
                 The best way to start is a free Readiness Check. No sales pitch — just a review of your platform and a clear report.
               </p>

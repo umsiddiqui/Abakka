@@ -244,13 +244,13 @@ export default function BundlesPage() {
                   </span>
                 </div>
 
-                <h1 className="hero-fade-up delay-100 text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+                <h1 className="hero-fade-up delay-100 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
                   Launch your governed<br />
                   data platform in{" "}
                   <span className="gradient-text-red">2–8 weeks.</span>
                 </h1>
 
-                <p className="hero-fade-up delay-200 text-base text-[#9BB0B8] leading-relaxed max-w-lg mb-8">
+                <p className="hero-fade-up delay-200 text-lg text-[#9BB0B8] leading-relaxed max-w-lg mb-8">
                   Two bundles. Fixed scope, fixed price, fixed timeline. Delivered by a lean, senior team — no juniors, no hand-offs.
                   Pick a platform. Pick a bundle. We do the engineering.
                 </p>
@@ -287,7 +287,7 @@ export default function BundlesPage() {
                 { value: "fixed",     label: "scope · price · time" },
               ].map((s) => (
                 <div key={s.label} className="bg-[#1B3139] px-6 py-4">
-                  <div className="font-mono text-lg font-bold text-white">{s.value}</div>
+                  <div className="font-mono text-xl font-bold text-white">{s.value}</div>
                   <div className="text-xs text-[#6B7B82] uppercase tracking-widest mt-0.5">{s.label}</div>
                 </div>
               ))}
@@ -300,8 +300,8 @@ export default function BundlesPage() {
           <div className="max-w-6xl mx-auto">
             <AnimateIn className="mb-7">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">Step 0 · Always free</span>
-              <h2 className="text-2xl font-bold text-[#1B3139] mt-2">Cloud Data Platform Readiness Check</h2>
-              <p className="text-sm text-[#6B7B82] mt-1.5 max-w-xl">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mt-2">Cloud Data Platform Readiness Check</h2>
+              <p className="text-base text-[#6B7B82] mt-1.5 max-w-xl">
                 Before we build anything, we confirm which platform fits and which bundle makes sense — zero obligation.
                 Focused on Databricks and Cloudera CDP.
               </p>
@@ -315,7 +315,7 @@ export default function BundlesPage() {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#EB1600]" />
                     Free · 0–3 days
                   </span>
-                  <h3 className="text-lg font-bold text-[#1B3139] mb-3">
+                  <h3 className="text-xl font-bold text-[#1B3139] mb-3">
                     Databricks / Cloudera CDP Readiness Check
                   </h3>
                   <p className="text-sm text-[#6B7B82] leading-relaxed mb-5">
@@ -396,8 +396,8 @@ export default function BundlesPage() {
           <div className="max-w-6xl mx-auto">
             <AnimateIn className="mb-8">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">Paid bundles · Fixed price &amp; timeline</span>
-              <h2 className="text-2xl font-bold text-[#1B3139] mt-2">Two bundles. Every use case.</h2>
-              <p className="text-sm text-[#6B7B82] mt-1.5 max-w-xl">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mt-2">Two bundles. Every use case.</h2>
+              <p className="text-base text-[#6B7B82] mt-1.5 max-w-xl">
                 Both bundles include DEV / UAT / PRO environments, IaC, and a reference workload.
                 The difference is your security posture.
               </p>
@@ -413,8 +413,8 @@ export default function BundlesPage() {
           <div className="max-w-6xl mx-auto">
             <AnimateIn className="mb-8">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">Add-ons · Fixed-price modules</span>
-              <h2 className="text-2xl font-bold text-[#1B3139] mt-2">Extend your platform</h2>
-              <p className="text-sm text-[#6B7B82] mt-1.5 max-w-lg">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mt-2">Extend your platform</h2>
+              <p className="text-base text-[#6B7B82] mt-1.5 max-w-lg">
                 Each integration is a standalone fixed-price module — bolt onto either bundle.
                 Priced after your free assessment.
               </p>
@@ -428,7 +428,7 @@ export default function BundlesPage() {
                       {a.icon}
                     </div>
                     <div>
-                      <h3 className="text-sm font-bold text-[#1B3139] mb-1">{a.name}</h3>
+                      <h3 className="text-xl font-bold text-[#1B3139] mb-1">{a.name}</h3>
                       <p className="text-sm text-[#6B7B82] leading-relaxed max-w-xl mb-2.5">{a.desc}</p>
                       <div className="flex flex-wrap gap-2">
                         {a.tags.map((t) => (
@@ -457,8 +457,8 @@ export default function BundlesPage() {
           <div className="max-w-6xl mx-auto">
             <AnimateIn className="mb-7">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">Bundle comparison</span>
-              <h2 className="text-2xl font-bold text-[#1B3139] mt-2">What changes between Launchpad and Zero Trust?</h2>
-              <p className="text-sm text-[#6B7B82] mt-1.5 max-w-xl">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mt-2">What changes between Launchpad and Zero Trust?</h2>
+              <p className="text-base text-[#6B7B82] mt-1.5 max-w-xl">
                 Launchpad gets you a governed, production-ready platform fast. Zero Trust adds the controls enterprises need.
               </p>
             </AnimateIn>
@@ -467,7 +467,7 @@ export default function BundlesPage() {
                 {/* Launchpad card */}
                 <div className="border border-[#E8EAEB] p-6">
                   <div className="flex items-center justify-between mb-5">
-                    <h3 className="text-base font-bold text-[#1B3139]">Bundle A · Launchpad</h3>
+                    <h3 className="text-xl font-bold text-[#1B3139]">Bundle A · Launchpad</h3>
                     <span className="text-xs font-mono bg-[#F4F5F6] border border-[#E8EAEB] px-2 py-1 text-[#6B7B82]">2–4 weeks</span>
                   </div>
                   <ul className="space-y-3">
@@ -482,7 +482,7 @@ export default function BundlesPage() {
                 {/* Zero Trust card */}
                 <div className="bg-[#1B3139] p-6">
                   <div className="flex items-center justify-between mb-5">
-                    <h3 className="text-base font-bold text-white">Bundle B · Zero Trust</h3>
+                    <h3 className="text-xl font-bold text-white">Bundle B · Zero Trust</h3>
                     <span className="text-xs font-mono bg-[#1B3139] border border-[#2a4550] px-2 py-1 text-[#9BB0B8]">4–8 weeks</span>
                   </div>
                   <ul className="space-y-3">
@@ -518,7 +518,7 @@ export default function BundlesPage() {
           <div className="absolute inset-0 dot-grid-dark pointer-events-none opacity-60" />
           <div className="max-w-6xl mx-auto relative flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <AnimateIn direction="left">
-              <h2 className="text-2xl font-bold text-white mb-2">Not sure which bundle fits?</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-2">Not sure which bundle fits?</h2>
               <p className="text-sm text-[#9BB0B8] max-w-lg">
                 Book a free 30-min call. We&apos;ll recommend the right bundle — or tell you honestly if neither fits and why.
                 No pitch, no obligation.

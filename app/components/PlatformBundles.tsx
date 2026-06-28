@@ -118,7 +118,7 @@ export default function PlatformBundles() {
             >
               {p}
               {p === "Cloudera CDP" && (
-                <span className="ml-2 text-[10px] font-semibold bg-[#EB1600] text-white px-1.5 py-0.5">
+                <span className="ml-2 text-xs font-semibold bg-[#EB1600] text-white px-1.5 py-0.5">
                   ENT
                 </span>
               )}

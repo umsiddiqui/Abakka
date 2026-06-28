@@ -3,6 +3,31 @@
 :root {
   --background: #FFFFFF;
   --foreground: #1B3139;
+
+  /* ── Typography scale (rem = 16px base) ──
+     Used consistently across pages. Prefer these tokens over one-off sizes.
+
+     xs   0.75rem  12px  labels, badges, metadata
+     sm   0.875rem 14px  body, buttons, links
+     base 1rem     16px  section intros, emphasized body
+     lg   1.125rem 18px  hero lead paragraphs
+     xl   1.25rem  20px  card titles
+     2xl  1.5rem   24px  small section headings
+     3xl  1.875rem 30px  section headings (mobile)
+     4xl  2.25rem  36px  section headings (desktop)
+     5xl  3rem     48px  page headings (mobile/tablet)
+     6xl  3.75rem  60px  page headings (desktop)
+  */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
 }
 
 @theme inline {
@@ -18,6 +43,29 @@
   --color-brand-muted: #6B7B82;
   --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-dm-mono);
+
+  /* Map design tokens to Tailwind utilities */
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+  --text-5xl: var(--font-size-5xl);
+  --text-6xl: var(--font-size-6xl);
+
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl--line-height: 1;
+  --text-6xl--line-height: 1;
 }
 
 body {
