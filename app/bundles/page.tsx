@@ -8,7 +8,8 @@ import AnimateIn from "../components/AnimateIn";
    Simple, robust: 3 static rings + a glowing core. Items placed at fixed
    top/right/bottom/left positions per ring — no math, no drift. */
 function PlatformDiagram() {
-  const cx = 230, cy = 230;
+  // Wider canvas so left/right labels never clip. Centered inside viewBox.
+  const cx = 320, cy = 280;
 
   // Each ring: items at explicit absolute positions on the ring circumference.
   // Positions are chosen so that labels (which radiate outward) never overlap.
@@ -16,7 +17,7 @@ function PlatformDiagram() {
   // its side labels sit above/below Ring 2's, avoiding horizontal collisions.
   // Simpler, roomier layout. All item labels share one font size;
   // all dots share one size; labels sit outside the ring with generous padding.
-  const r1 = 86, r2 = 142, r3 = 198;
+  const r1 = 92, r2 = 152, r3 = 210;
   const rings = [
     {
       r: r1,
@@ -49,9 +50,9 @@ function PlatformDiagram() {
     },
   ];
 
-  // Label position: 26px outside the node, aligned to the center of the dot.
+  // Label position: 28px outside the node, aligned to the center of the dot.
   const labelPos = (n: typeof rings[0]["nodes"][0], r: number): { x: number; y: number; anchor: "start" | "middle" | "end" } => {
-    const pad = 26;
+    const pad = 28;
     const dx = n.x - cx;
     const dy = n.y - cy;
     const len = Math.sqrt(dx * dx + dy * dy) || 1;
@@ -64,7 +65,7 @@ function PlatformDiagram() {
   };
 
   return (
-    <svg viewBox="0 0 640 560" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden className="w-full h-full">
+    <svg viewBox="0 0 760 640" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden className="w-full h-full">
       <defs>
         <pattern id="eco-dots" width="22" height="22" patternUnits="userSpaceOnUse">
           <circle cx="1" cy="1" r="0.7" fill="rgba(255,255,255,0.04)" />
@@ -82,8 +83,8 @@ function PlatformDiagram() {
       </defs>
 
       {/* Background */}
-      <rect width="640" height="560" fill="url(#eco-dots)" />
-      <ellipse cx={cx} cy={cy} rx="300" ry="280" fill="url(#eco-amb)" />
+      <rect width="760" height="640" fill="url(#eco-dots)" />
+      <ellipse cx={cx} cy={cy} rx="360" ry="300" fill="url(#eco-amb)" />
 
       {/* ── Three rotating rings (measured strokes, all visible) ── */}
       {rings.map((ring, i) => {
@@ -131,7 +132,7 @@ function PlatformDiagram() {
                 textAnchor={lp.anchor}
                 dominantBaseline="middle"
                 fill={n.color}
-                fontSize="12"
+                fontSize="13"
                 fontFamily="monospace"
                 fontWeight="600"
                 letterSpacing="0.2"
@@ -233,7 +234,7 @@ export default function BundlesPage() {
           />
 
           <div className="max-w-6xl mx-auto relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.25fr] gap-10 items-center">
 
               {/* Left: copy */}
               <div>
@@ -273,7 +274,7 @@ export default function BundlesPage() {
 
               {/* Right: animated platform diagram */}
               <div className="hidden lg:flex items-center justify-center">
-                <div className="hero-fade-right delay-400 float-slow w-full max-w-[420px] h-[380px]">
+                <div className="hero-fade-right delay-400 float-slow w-full aspect-[760/640]">
                   <PlatformDiagram />
                 </div>
               </div>
