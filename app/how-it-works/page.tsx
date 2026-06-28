@@ -84,16 +84,16 @@ export default function HowItWorksPage() {
       <main className="pt-16">
 
         {/* Header */}
-        <section className="bg-white py-20 px-6 lg:px-8 border-b border-[#E8EAEB]">
+        <section className="bg-white py-20 px-6 lg:px-8 border-b border-[#E3E0D8]">
           <div className="max-w-7xl mx-auto max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6">
-              <div className="w-2 h-2 bg-[#EB1600]" />
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">The process</span>
+              <div className="w-2 h-2 bg-[#C9A227]" />
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#C9A227]">The process</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A1114] leading-tight mb-6">
               You always know what happens next.
             </h1>
-            <p className="text-lg text-[#6B7B82] leading-relaxed">
+            <p className="text-lg text-[#5E686D] leading-relaxed">
               Eight steps, published so you know exactly where you stand at every stage. No black boxes, no surprises at the end.
             </p>
           </div>
@@ -107,34 +107,34 @@ export default function HowItWorksPage() {
               return (
                 <div
                   key={s.n}
-                  className={`relative flex flex-col md:flex-row ${dark ? "bg-[#1B3139]" : "bg-white border border-[#E8EAEB]"} group transition-colors`}
+                  className={`relative flex flex-col md:flex-row ${dark ? "bg-[#0A1114]" : "bg-white border border-[#E3E0D8]"} group transition-colors`}
                 >
                   {/* Step number column */}
-                  <div className={`md:w-40 shrink-0 flex md:flex-col items-center md:items-start justify-between md:justify-between p-6 md:p-7 ${dark ? "border-b md:border-b-0 md:border-r border-[#2a4550]" : "border-b md:border-b-0 md:border-r border-[#E8EAEB]"}`}>
+                  <div className={`md:w-40 shrink-0 flex md:flex-col items-center md:items-start justify-between md:justify-between p-6 md:p-7 ${dark ? "border-b md:border-b-0 md:border-r border-[#2a2d30]" : "border-b md:border-b-0 md:border-r border-[#E3E0D8]"}`}>
                     <div className={`flex items-center gap-3 md:gap-0 md:flex-col md:items-start`}>
-                      <span className={`font-mono text-4xl md:text-5xl font-bold leading-none ${dark ? "text-[#EB1600]" : "text-[#1B3139]"}`}>
+                      <span className={`font-mono text-4xl md:text-5xl font-bold leading-none ${dark ? "text-[#C9A227]" : "text-[#0A1114]"}`}>
                         {String(s.n).padStart(2, "0")}
                       </span>
                     </div>
                     <div className="flex md:flex-col gap-2 md:gap-1 items-end md:items-start">
-                      <span className={`text-xs font-mono font-semibold ${dark ? "text-white" : "text-[#1B3139]"}`}>{s.time}</span>
-                      <span className={`text-xs uppercase tracking-widest ${dark ? "text-[#9BB0B8]" : "text-[#6B7B82]"}`}>{s.who}</span>
+                      <span className={`text-xs font-mono font-semibold ${dark ? "text-white" : "text-[#0A1114]"}`}>{s.time}</span>
+                      <span className={`text-xs uppercase tracking-widest ${dark ? "text-[#9BA3A7]" : "text-[#5E686D]"}`}>{s.who}</span>
                     </div>
                   </div>
 
                   {/* Content column */}
                   <div className="p-6 md:p-7 flex-1">
-                    <h3 className={`text-xl font-bold mb-2 ${dark ? "text-white" : "text-[#1B3139]"}`}>
+                    <h3 className={`text-xl font-bold mb-2 ${dark ? "text-white" : "text-[#0A1114]"}`}>
                       {s.title}
                     </h3>
-                    <p className={`text-sm leading-relaxed mb-4 max-w-2xl ${dark ? "text-[#9BB0B8]" : "text-[#6B7B82]"}`}>
+                    <p className={`text-sm leading-relaxed mb-4 max-w-2xl ${dark ? "text-[#9BA3A7]" : "text-[#5E686D]"}`}>
                       {s.desc}
                     </p>
-                    <div className={`mt-4 flex items-baseline gap-3 px-4 py-3 border-l-2 ${dark ? "bg-[#EB1600]/[0.07] border-[#EB1600]/60" : "bg-[#FFF8F7] border-[#EB1600]/50"}`}>
-                      <span className="text-xs font-semibold uppercase tracking-widest shrink-0 text-[#EB1600]">
+                    <div className={`mt-4 flex items-baseline gap-3 px-4 py-3 border-l-2 ${dark ? "bg-[#C9A227]/[0.07] border-[#C9A227]/60" : "bg-[#FAFAF8] border-[#C9A227]/50"}`}>
+                      <span className="text-xs font-semibold uppercase tracking-widest shrink-0 text-[#C9A227]">
                         Outcome
                       </span>
-                      <span className={`text-sm italic leading-snug ${dark ? "text-white" : "text-[#1B3139]"}`}>
+                      <span className={`text-sm italic leading-snug ${dark ? "text-white" : "text-[#0A1114]"}`}>
                         {s.outcome}
                       </span>
                     </div>
@@ -146,36 +146,36 @@ export default function HowItWorksPage() {
         </section>
 
         {/* How we align on value — compact, non-salesy */}
-        <section className="bg-[#F4F5F6] py-16 px-6 lg:px-8 border-y border-[#E8EAEB]">
+        <section className="bg-[#F2F0EA] py-16 px-6 lg:px-8 border-y border-[#E3E0D8]">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-1">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">How we align</p>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] leading-tight">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#C9A227] mb-3">How we align</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1114] leading-tight">
                 Value first, then terms.
               </h2>
             </div>
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6">
-                <h3 className="text-base font-bold text-[#1B3139] mb-2">Fixed scope protects everyone</h3>
-                <p className="text-sm text-[#6B7B82] leading-relaxed">
+                <h3 className="text-base font-bold text-[#0A1114] mb-2">Fixed scope protects everyone</h3>
+                <p className="text-sm text-[#5E686D] leading-relaxed">
                   Every SOW includes explicit scope, acceptance criteria, and prerequisites. If something new emerges, we handle it through a written change order — no surprises.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-base font-bold text-[#1B3139] mb-2">Milestones tied to outcomes</h3>
-                <p className="text-sm text-[#6B7B82] leading-relaxed">
+                <h3 className="text-base font-bold text-[#0A1114] mb-2">Milestones tied to outcomes</h3>
+                <p className="text-sm text-[#5E686D] leading-relaxed">
                   Payments are linked to delivery milestones, not calendar dates. You see working output before each step, so progress and value are visible throughout.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-base font-bold text-[#1B3139] mb-2">Flexible for larger programs</h3>
-                <p className="text-sm text-[#6B7B82] leading-relaxed">
+                <h3 className="text-base font-bold text-[#0A1114] mb-2">Flexible for larger programs</h3>
+                <p className="text-sm text-[#5E686D] leading-relaxed">
                   Bespoke engagements can be phased with monthly checkpoints. This keeps governance simple and lets us adapt as the program evolves.
                 </p>
               </div>
               <div className="bg-white p-6">
-                <h3 className="text-base font-bold text-[#1B3139] mb-2">You own the IP</h3>
-                <p className="text-sm text-[#6B7B82] leading-relaxed">
+                <h3 className="text-base font-bold text-[#0A1114] mb-2">You own the IP</h3>
+                <p className="text-sm text-[#5E686D] leading-relaxed">
                   All code, infrastructure definitions, documentation, and runbooks are transferred to you at handover. We do not build dependency.
                 </p>
               </div>
@@ -184,17 +184,17 @@ export default function HowItWorksPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#1B3139] py-20 px-6 lg:px-8">
+        <section className="bg-[#0A1114] py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3">Ready to get started?</h2>
-              <p className="text-sm text-[#9BB0B8] max-w-lg">
+              <p className="text-sm text-[#9BA3A7] max-w-lg">
                 The free Readiness Check is the lowest-risk way to begin. Two days, a scored report, a clear roadmap — no commitment required.
               </p>
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#EB1600] text-white text-sm font-bold hover:bg-[#CC1300] transition-colors shrink-0"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#C9A227] text-white text-sm font-bold hover:bg-[#A7861F] transition-colors shrink-0"
             >
               Book a Free Readiness Check
             </Link>

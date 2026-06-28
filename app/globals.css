@@ -1,8 +1,9 @@
+/* Abakka Design Variation: Executive Studio */
 @import "tailwindcss";
 
 :root {
   --background: #FFFFFF;
-  --foreground: #1B3139;
+  --foreground: #0A1114;
 
   /* ── Typography scale (rem = 16px base) ──
      Used consistently across pages. Prefer these tokens over one-off sizes.
@@ -33,15 +34,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-brand-red: #EB1600;
-  --color-brand-red-dark: #CC1300;
-  --color-brand-navy: #1B3139;
-  --color-brand-navy-dark: #0d1e24;
-  --color-brand-orange: #FF5F46;
-  --color-brand-gray: #F4F5F6;
-  --color-brand-gray-mid: #E8EAEB;
-  --color-brand-muted: #6B7B82;
-  --font-sans: var(--font-dm-sans);
+  --color-brand-red: #C9A227;
+  --color-brand-red-dark: #A7861F;
+  --color-brand-navy: #0A1114;
+  --color-brand-navy-dark: #070B0D;
+  --color-brand-orange: #C9A227;
+  --color-brand-gray: #F2F0EA;
+  --color-brand-gray-mid: #E3E0D8;
+  --color-brand-muted: #5E686D;
+  --font-sans: var(--font-heading);
   --font-mono: var(--font-dm-mono);
 
   /* Map design tokens to Tailwind utilities */
@@ -71,7 +72,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-heading), 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -185,7 +186,7 @@ body {
 /* ── Gradient text ── */
 
 .gradient-text-red {
-  background: linear-gradient(120deg, #EB1600 0%, #FF7A64 50%, #EB1600 100%);
+  background: linear-gradient(120deg, #C9A227 0%, #E5C86A 50%, #C9A227 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -199,14 +200,14 @@ body {
 }
 
 .dot-grid-light {
-  background-image: radial-gradient(circle, #E8EAEB 1px, transparent 1px);
+  background-image: radial-gradient(circle, #E3E0D8 1px, transparent 1px);
   background-size: 22px 22px;
 }
 
 .line-grid-light {
   background-image:
-    linear-gradient(to right, rgba(232,234,235,0.5) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(232,234,235,0.5) 1px, transparent 1px);
+    linear-gradient(to right, rgba(227,224,216,0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(227,224,216,0.5) 1px, transparent 1px);
   background-size: 36px 36px;
 }
 
@@ -239,9 +240,9 @@ body {
 /* ── Glow utilities ── */
 
 .glow-red-sm {
-  box-shadow: 0 0 16px rgba(235, 22, 0, 0.35), 0 0 4px rgba(235, 22, 0, 0.2);
+  box-shadow: 0 0 16px rgba(201, 162, 39, 0.35), 0 0 4px rgba(201, 162, 39, 0.2);
 }
 
 .glow-navy-sm {
-  box-shadow: 0 0 20px rgba(13, 30, 36, 0.5), 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(10, 17, 20, 0.5), 0 4px 16px rgba(0,0,0,0.2);
 }

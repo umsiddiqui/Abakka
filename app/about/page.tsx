@@ -28,27 +28,27 @@ const platforms = [
 const benchCategories = [
   {
     name: "Cloud & Infrastructure",
-    accent: "#9BB0B8",
+    accent: "#9BA3A7",
     skills: ["Terraform", "Kubernetes / AKS / EKS", "Networking & VNet Peering", "Azure / AWS / GCP"],
   },
   {
     name: "Data Engineering",
-    accent: "#FF6B35",
+    accent: "#C9A227",
     skills: ["Apache Spark", "Delta Lake", "Kafka / Streaming", "ETL / ELT Pipelines"],
   },
   {
     name: "Governance & Catalog",
-    accent: "#3FB68B",
+    accent: "#249EDC",
     skills: ["Unity Catalog", "Ranger / Atlas", "Data Lineage", "RBAC Models"],
   },
   {
     name: "Security & Compliance",
-    accent: "#EB1600",
+    accent: "#C9A227",
     skills: ["Zero Trust Networking", "CMK / BYOK", "Exfiltration Controls", "SOC2 / ISO Mapping"],
   },
   {
     name: "DevOps & Operations",
-    accent: "#4BA3C3",
+    accent: "#249EDC",
     skills: ["CI / CD Pipelines", "Observability & Alerting", "Cost Optimization", "Performance Tuning"],
   },
 ];
@@ -57,11 +57,11 @@ const benchCategories = [
 function BenchViz() {
   const cx = 75, cy = 150;
   const nodes = [
-    { x: 250, y: 30,  label: "Cloud & Infra",    color: "#9BB0B8" },
-    { x: 370, y: 72,  label: "Data Engineering", color: "#FF6B35" },
-    { x: 410, y: 150, label: "Governance",       color: "#3FB68B" },
-    { x: 370, y: 228, label: "Security",         color: "#EB1600" },
-    { x: 250, y: 270, label: "DevOps & Ops",     color: "#4BA3C3" },
+    { x: 250, y: 30,  label: "Cloud & Infra",    color: "#9BA3A7" },
+    { x: 370, y: 72,  label: "Data Engineering", color: "#C9A227" },
+    { x: 410, y: 150, label: "Governance",       color: "#249EDC" },
+    { x: 370, y: 228, label: "Security",         color: "#C9A227" },
+    { x: 250, y: 270, label: "DevOps & Ops",     color: "#249EDC" },
   ];
   return (
     <svg viewBox="0 0 560 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden className="w-full">
@@ -87,17 +87,17 @@ function BenchViz() {
 
       {/* Core: BENCH */}
       <g filter="url(#bench-glow)">
-        <circle cx={cx} cy={cy} r="38" fill="#1B3139" stroke="#EB1600" strokeWidth="1.8" />
-        <circle cx={cx} cy={cy} r="32" stroke="#EB1600" strokeWidth="0.3" fill="none" opacity="0.2" />
+        <circle cx={cx} cy={cy} r="38" fill="#0A1114" stroke="#C9A227" strokeWidth="1.8" />
+        <circle cx={cx} cy={cy} r="32" stroke="#C9A227" strokeWidth="0.3" fill="none" opacity="0.2" />
       </g>
       <text x={cx} y={cy - 4} textAnchor="middle" fill="white" fontSize="11" fontFamily="monospace" fontWeight="bold" letterSpacing="0.5">VETTED</text>
-      <text x={cx} y={cy + 9} textAnchor="middle" fill="#EB1600" fontSize="11" fontFamily="monospace" fontWeight="bold" letterSpacing="0.5">BENCH</text>
+      <text x={cx} y={cy + 9} textAnchor="middle" fill="#C9A227" fontSize="11" fontFamily="monospace" fontWeight="bold" letterSpacing="0.5">BENCH</text>
 
       {/* Category nodes */}
       {nodes.map((n, i) => (
         <g key={n.label} opacity="0">
           <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin={`${0.6 + i * 0.12}s`} fill="freeze" />
-          <circle cx={n.x} cy={n.y} r="14" fill="#1B3139" stroke={n.color} strokeWidth="1.6" />
+          <circle cx={n.x} cy={n.y} r="14" fill="#0A1114" stroke={n.color} strokeWidth="1.6" />
           <circle cx={n.x} cy={n.y} r="4" fill={n.color} opacity="0.8" />
           <text x={n.x + 22} y={n.y + 4} fill={n.color} fontSize="9.5" fontFamily="monospace" fontWeight="bold">
             {n.label}
@@ -108,9 +108,9 @@ function BenchViz() {
       {/* Founders indicator — two small dots near core */}
       <g opacity="0">
         <animate attributeName="opacity" from="0" to="0.8" dur="0.5s" begin="1.4s" fill="freeze" />
-        <circle cx={cx - 10} cy={cy + 52} r="3" fill="#9BB0B8" />
-        <circle cx={cx + 10} cy={cy + 52} r="3" fill="#9BB0B8" />
-        <text x={cx} y={cy + 70} textAnchor="middle" fill="#6B7B82" fontSize="7" fontFamily="monospace" letterSpacing="0.5">2 SENIOR FOUNDERS</text>
+        <circle cx={cx - 10} cy={cy + 52} r="3" fill="#9BA3A7" />
+        <circle cx={cx + 10} cy={cy + 52} r="3" fill="#9BA3A7" />
+        <text x={cx} y={cy + 70} textAnchor="middle" fill="#5E686D" fontSize="7" fontFamily="monospace" letterSpacing="0.5">2 SENIOR FOUNDERS</text>
       </g>
     </svg>
   );
@@ -123,16 +123,16 @@ export default function AboutPage() {
       <main className="pt-16">
 
         {/* Header */}
-        <section className="bg-white py-20 px-6 lg:px-8 border-b border-[#E8EAEB]">
+        <section className="bg-white py-20 px-6 lg:px-8 border-b border-[#E3E0D8]">
           <div className="max-w-7xl mx-auto">
             <div className="inline-flex items-center gap-2 mb-6">
-              <div className="w-2 h-2 bg-[#EB1600]" />
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#EB1600]">About</span>
+              <div className="w-2 h-2 bg-[#C9A227]" />
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#C9A227]">About</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B3139] leading-tight mb-6 max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A1114] leading-tight mb-6 max-w-3xl">
               Senior engineers, packaged for delivery.
             </h1>
-            <p className="text-lg text-[#6B7B82] leading-relaxed max-w-2xl">
+            <p className="text-lg text-[#5E686D] leading-relaxed max-w-2xl">
               Abakka is a lean, senior data engineering studio. We are a small team that has built
               national-scale platforms and packaged that experience into fixed-scope bundles anyone can buy.
             </p>
@@ -142,25 +142,25 @@ export default function AboutPage() {
         {/* Profiles */}
         <section className="bg-white py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#E8EAEB]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#E3E0D8]">
               {profiles.map((p, i) => (
                 <div key={i} className="bg-white p-10">
                   <div className="flex items-start gap-5 mb-6">
-                    <div className="w-14 h-14 bg-[#1B3139] flex items-center justify-center text-white font-mono font-bold text-lg shrink-0">
+                    <div className="w-14 h-14 bg-[#0A1114] flex items-center justify-center text-white font-mono font-bold text-lg shrink-0">
                       0{i + 1}
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold text-[#1B3139]">{p.role}</h2>
+                      <h2 className="text-xl font-bold text-[#0A1114]">{p.role}</h2>
                     </div>
                   </div>
-                  <p className="text-sm text-[#6B7B82] leading-relaxed mb-6">{p.bio}</p>
+                  <p className="text-sm text-[#5E686D] leading-relaxed mb-6">{p.bio}</p>
                   <div className="mb-6">
-                    <h4 className="text-xs font-semibold uppercase tracking-widest text-[#6B7B82] mb-2">Focus</h4>
-                    <p className="text-sm text-[#1B3139]">{p.focus}</p>
+                    <h4 className="text-xs font-semibold uppercase tracking-widest text-[#5E686D] mb-2">Focus</h4>
+                    <p className="text-sm text-[#0A1114]">{p.focus}</p>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {p.certs.map((c) => (
-                      <span key={c} className="text-xs font-mono px-2.5 py-1 border border-[#E8EAEB] text-[#6B7B82] bg-[#F4F5F6]">
+                      <span key={c} className="text-xs font-mono px-2.5 py-1 border border-[#E3E0D8] text-[#5E686D] bg-[#F2F0EA]">
                         {c}
                       </span>
                     ))}
@@ -172,16 +172,16 @@ export default function AboutPage() {
         </section>
 
         {/* Vetted Bench */}
-        <section className="bg-[#0d1e24] py-20 px-6 lg:px-8 relative overflow-hidden">
+        <section className="bg-[#070B0D] py-20 px-6 lg:px-8 relative overflow-hidden">
           <div className="absolute inset-0 dot-grid-dark pointer-events-none opacity-50" />
           <div className="max-w-7xl mx-auto relative">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mb-14">
               <div className="lg:col-span-2">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">The bench</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#C9A227] mb-3">The bench</p>
                 <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
                   Two founders.<br />A vetted bench behind them.
                 </h2>
-                <p className="text-sm text-[#9BB0B8] leading-relaxed max-w-md">
+                <p className="text-sm text-[#9BA3A7] leading-relaxed max-w-md">
                   For larger engagements, we draw on a curated network of senior specialists — vetted across
                   the skills any serious data platform delivery requires. Here&apos;s what&apos;s on the bench.
                 </p>
@@ -194,15 +194,15 @@ export default function AboutPage() {
             </div>
 
             {/* Bench skill grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#2a4550]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#2a2d30]">
               {benchCategories.map((cat, i) => (
-                <AnimateIn key={cat.name} delay={i * 100} className="bg-[#1B3139]">
+                <AnimateIn key={cat.name} delay={i * 100} className="bg-[#0A1114]">
                   <div className="p-6 h-full flex flex-col">
                     <div className="w-4 h-0.5 mb-4" style={{ background: cat.accent }} />
                     <h3 className="text-xl font-bold text-white mb-4">{cat.name}</h3>
                     <ul className="space-y-2.5 flex-1">
                       {cat.skills.map((s) => (
-                        <li key={s} className="text-xs font-mono text-[#9BB0B8] flex items-center gap-2 leading-relaxed">
+                        <li key={s} className="text-xs font-mono text-[#9BA3A7] flex items-center gap-2 leading-relaxed">
                           <span className="w-1 h-1 rounded-full shrink-0" style={{ background: cat.accent }} />
                           {s}
                         </li>
@@ -212,27 +212,27 @@ export default function AboutPage() {
                 </AnimateIn>
               ))}
             </div>
-            <p className="mt-5 text-xs text-[#6B7B82]">
+            <p className="mt-5 text-xs text-[#5E686D]">
               Bench specialists are engaged per engagement, not retained. You get senior attention on every engagement — no junior staffing.
             </p>
           </div>
         </section>
 
         {/* Delivery model */}
-        <section className="bg-[#F4F5F6] py-20 px-6 lg:px-8">
+        <section className="bg-[#F2F0EA] py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">Delivery model</p>
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139] mb-6">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#C9A227] mb-3">Delivery model</p>
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1114] mb-6">
                   Remote-first, async-friendly.
                 </h2>
-                <p className="text-sm text-[#6B7B82] leading-relaxed">
+                <p className="text-sm text-[#5E686D] leading-relaxed">
                   We are based in the UAE (GMT+4), which bridges European mornings and APAC afternoons —
                   making us well-suited to async delivery across EU, US, and APAC time zones.
                 </p>
               </div>
-              <div className="grid grid-cols-1 gap-px bg-[#E8EAEB]">
+              <div className="grid grid-cols-1 gap-px bg-[#E3E0D8]">
                 {[
                   { label: "Markets", value: "EU/UK · US/Canada/AU · Singapore/ANZ" },
                   { label: "Delivery model", value: "Remote-first, async-first" },
@@ -240,8 +240,8 @@ export default function AboutPage() {
                   { label: "Team model", value: "Senior founders + vetted bench" },
                 ].map((item) => (
                   <div key={item.label} className="bg-white px-6 py-5">
-                    <div className="text-xs font-semibold uppercase tracking-widest text-[#6B7B82] mb-1">{item.label}</div>
-                    <div className="text-sm font-semibold text-[#1B3139]">{item.value}</div>
+                    <div className="text-xs font-semibold uppercase tracking-widest text-[#5E686D] mb-1">{item.label}</div>
+                    <div className="text-sm font-semibold text-[#0A1114]">{item.value}</div>
                   </div>
                 ))}
               </div>
@@ -253,18 +253,18 @@ export default function AboutPage() {
         <section className="bg-white py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#EB1600] mb-3">Platforms</p>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#1B3139]">Deep on the platforms that matter.</h2>
-              <p className="text-base text-[#6B7B82] mt-3 max-w-lg">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#C9A227] mb-3">Platforms</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1114]">Deep on the platforms that matter.</h2>
+              <p className="text-base text-[#5E686D] mt-3 max-w-lg">
                 We focus on Databricks and Cloudera CDP because that is where our deepest enterprise experience lies.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E8EAEB]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E3E0D8]">
               {platforms.map((p) => (
                 <div key={p.name} className="bg-white p-6">
-                  <div className="w-4 h-0.5 bg-[#EB1600] mb-4" />
-                  <h3 className="text-xl font-bold text-[#1B3139] mb-2">{p.name}</h3>
-                  <p className="text-sm text-[#6B7B82] leading-relaxed">{p.desc}</p>
+                  <div className="w-4 h-0.5 bg-[#C9A227] mb-4" />
+                  <h3 className="text-xl font-bold text-[#0A1114] mb-2">{p.name}</h3>
+                  <p className="text-sm text-[#5E686D] leading-relaxed">{p.desc}</p>
                 </div>
               ))}
             </div>
@@ -272,11 +272,11 @@ export default function AboutPage() {
         </section>
 
         {/* Hidden LinkedIn reference */}
-        <section className="bg-[#F4F5F6] border-t border-[#E8EAEB] py-8 px-6 lg:px-8">
+        <section className="bg-[#F2F0EA] border-t border-[#E3E0D8] py-8 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <p className="text-xs text-[#6B7B82]">
+            <p className="text-xs text-[#5E686D]">
               Individual backgrounds are available on request. Company updates: {" "}
-              <a href="https://linkedin.com/company/abakka-data" target="_blank" rel="noopener noreferrer" className="text-[#6B7B82] hover:text-[#1B3139] underline">
+              <a href="https://linkedin.com/company/abakka-data" target="_blank" rel="noopener noreferrer" className="text-[#5E686D] hover:text-[#0A1114] underline">
                 LinkedIn
               </a>
               .
@@ -285,24 +285,24 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#EB1600] py-20 px-6 lg:px-8">
+        <section className="bg-[#C9A227] py-20 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3">Want to work with us?</h2>
-              <p className="text-sm text-red-100 max-w-md">
+              <p className="text-sm text-[#9BA3A7] max-w-md">
                 The best way to start is a free Readiness Check. No sales pitch — just a review of your platform and a clear report.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#EB1600] text-sm font-bold hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#C9A227] text-sm font-bold hover:bg-[#F2F0EA] transition-colors"
               >
                 Book a Free Readiness Check
               </Link>
               <Link
                 href="/bundles"
-                className="inline-flex items-center justify-center px-8 py-4 border border-white text-white text-sm font-semibold hover:bg-red-700 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 border border-white text-white text-sm font-semibold hover:bg-[#0A1114] transition-colors"
               >
                 View Bundles
               </Link>
