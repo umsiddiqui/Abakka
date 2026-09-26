@@ -20,6 +20,9 @@ export default function Nav() {
           <Link href="/bundles" className="text-sm font-medium text-[#0A1114] hover:text-[#C9A227] transition-colors">
             Bundles
           </Link>
+          <Link href="/azure-landing-zone" className="text-sm font-medium text-[#0A1114] hover:text-[#C9A227] transition-colors">
+            Azure Landing Zone
+          </Link>
           <Link href="/how-it-works" className="text-sm font-medium text-[#0A1114] hover:text-[#C9A227] transition-colors">
             How It Works
           </Link>
@@ -61,6 +64,7 @@ export default function Nav() {
       {open && (
         <div className="md:hidden bg-white border-t border-[#E3E0D8] px-6 py-4 flex flex-col gap-4">
           <Link href="/bundles" onClick={() => setOpen(false)} className="text-sm font-medium text-[#0A1114]">Bundles</Link>
+          <Link href="/azure-landing-zone" onClick={() => setOpen(false)} className="text-sm font-medium text-[#0A1114]">Azure Landing Zone</Link>
           <Link href="/how-it-works" onClick={() => setOpen(false)} className="text-sm font-medium text-[#0A1114]">How It Works</Link>
           <Link href="/about" onClick={() => setOpen(false)} className="text-sm font-medium text-[#0A1114]">About</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="text-sm font-medium text-[#0A1114]">Contact</Link>

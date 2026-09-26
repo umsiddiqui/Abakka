@@ -23,6 +23,7 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-widest text-[#5E686D] mb-4">Services</h4>
             <ul className="space-y-2.5 text-sm text-[#9BA3A7]">
               <li><Link href="/bundles" className="hover:text-white transition-colors">Bundles & Packages</Link></li>
+              <li><Link href="/azure-landing-zone" className="hover:text-white transition-colors">Azure Landing Zone</Link></li>
               <li><Link href="/bundles#assess" className="hover:text-white transition-colors">Health Check</Link></li>
               <li><Link href="/bundles#optimize" className="hover:text-white transition-colors">Cost Optimization</Link></li>
               <li><Link href="/bundles#migrate" className="hover:text-white transition-colors">Platform Migration</Link></li>
